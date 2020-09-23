@@ -12,10 +12,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //test
         // Do any additional setup after loading the view.
     }
-
-
+    
+    @IBOutlet weak var photo: UIImageView!
+    
+    @IBAction func Slider(_ sender: UISlider) {
+        photo.alpha = CGFloat(sender.value)
+        
+    }
 }
 
